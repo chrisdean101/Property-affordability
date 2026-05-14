@@ -1,20 +1,31 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Property Affordability Checker
 
-# Run and deploy your AI Studio app
+A small React + Vite application for estimating property purchase affordability.
 
-This contains everything you need to run your app locally.
+This app helps you compare purchase costs, financing needs, available cash, and whether an offer is affordable based on your inputs.
 
-View your app in AI Studio: https://ai.studio/apps/ba3fb832-20a8-4bc2-8c7d-5c87fac8aa5b
+## Features
+
+- Enter property valuation, asking price, offer amount, available cash, existing mortgage details, renovations, and fees
+- See calculated mortgage requirement, total acquisition cost, monthly repayment estimate, and affordability summary
+- Save input values in local storage so data is preserved while using the app
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
-
+**Prerequisites:** Node.js
 
 1. Install dependencies:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Start the development server:
    `npm run dev`
+3. Open the app in your browser at the local address shown by Vite
+
+## Build for Production
+
+- `npm run build`
+- `npm run preview`
+
+## Notes
+
+- No external AI or Google-specific service configuration is required to run this app locally.
+- If you want to clear saved input values, remove them from your browser local storage or refresh the app after resetting the form.
